@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./signup.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import logo from '../assets/logo.webp'; // Adjust the path based on your file structure
+
 
 const LoginForm = () => {
   const navigate = useNavigate();
@@ -46,9 +48,9 @@ const LoginForm = () => {
   return (
     <div className="container">
       <div className="logo-container">
-        <Link to="/">
-          <img src="src/assets/logo.webp" alt="logo" className="logo1" />
-        </Link>
+      <Link to="/">
+      <img src={logo} alt="logo" className="logo1" />
+    </Link>
       </div>
       <div className="card">
         <h1>Login</h1>
