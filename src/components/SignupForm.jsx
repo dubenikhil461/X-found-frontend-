@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./signup.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import logo from "../assets/logo.webp";
 const SignupForm = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -39,9 +39,9 @@ const SignupForm = () => {
   return (
     <div className="container">
       <div className="logo-container">
-        <Link to="/">
-          <img src="src/assets/logo.webp" alt="logo" className="logo1" />
-        </Link>
+      <Link to="/">
+      <img src={logo} alt="logo" className="logo1" />
+    </Link>
       </div>
       <div className="card">
         <h1>Signup</h1>
