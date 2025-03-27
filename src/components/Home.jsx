@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
+import logo from '../assets/logo.webp'; // Adjust the path based on your file structure
+
 import {
   faSignInAlt,
   faUserPlus,
@@ -282,8 +284,8 @@ function Home() {
         </div>
 
         <div className="logo">
-          <img src="/src/assets/logo.webp" alt="logo" className="logo-img" />
-        </div>
+      <img src={logo} alt="logo" className="logo-img" />
+    </div>
       </div>
 
       <form className="search-bar" onSubmit={(e) => {
