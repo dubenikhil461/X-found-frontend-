@@ -1,0 +1,126 @@
+.user-items-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .user-items-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .user-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .user-item-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .user-item-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .user-item-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .user-item-content {
+    padding: 15px;
+  }
+  
+  .user-item-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .user-item-description {
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .user-item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .user-item-status {
+    background-color: #e7f3fe;
+    color: #2196F3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .user-item-location {
+    color: #95a5a6;
+    font-size: 13px;
+  }
+  
+  .user-item-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .user-item-edit-btn,
+  .user-item-delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.2s ease;
+  }
+  
+  .user-item-edit-btn {
+    color: #3498db;
+  }
+  
+  .user-item-edit-btn:hover {
+    color: #2980b9;
+  }
+  
+  .user-item-delete-btn {
+    color: #e74c3c;
+  }
+  
+  .user-item-delete-btn:hover {
+    color: #c0392b;
+  }
+  
+  .user-items-empty-state {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 50px;
+    font-size: 16px;
+  }
+  
+  .user-items-loading {
+    text-align: center;
+    color: #2c3e50;
+    padding: 50px;
+    font-size: 18px;
+  }
+  
+  .user-items-error {
+    text-align: center;
+    color: #e74c3c;
+    padding: 50px;
+    font-size: 16px;
+  }
