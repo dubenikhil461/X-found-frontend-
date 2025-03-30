@@ -1,0 +1,41 @@
+/* Add these styles to your existing AboutUs.css file */
+
+.developer-info {
+  margin: 10px 0 20px;
+  font-style: italic;
+  color: #555;
+  line-height: 1.5;
+}
+
+.developer-name {
+  font-weight: 600;
+  display: block;
+}
+
+.developer-email {
+  display: block;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.developer-email a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.developer-email a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .developer-name,
+  .developer-email {
+    display: inline;
+  }
+
+  .developer-email {
+    margin-left: 15px;
+  }
+}
